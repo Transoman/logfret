@@ -1,13 +1,19 @@
 .header
-  padding: 25px 0
-  +r(767)
-    padding: 15px 0
-  .container
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 10
+  &__container
     position: relative
     display: flex
     align-items: flex-end
+    padding: 25px 0
+    border-bottom: 1px solid rgba($ghost, 0.3)
     +r(1200)
       align-items: center
+    +r(767)
+      padding: 15px 0
   &__left
     display: flex
     align-items: flex-end

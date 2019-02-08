@@ -1,0 +1,36 @@
+.hero
+  position: relative
+  padding: 360px 0 190px
+  background:
+    repeat: no-repeat
+    position: center top
+    size: cover
+  z-index: 1
+  +r(1599)
+    padding: 190px 0
+  +r(767)
+    padding: 140px 0
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: -40px
+    width: 48%
+    height: 12%
+    background: $accent
+    z-index: -1
+    +r(767)
+      bottom: -30px
+  &__content
+    +r(767)
+      text-align: center
+    h2
+      font-size: 84px
+      font-weight: 100
+      color: $abbey
+      +r(1599)
+        font-size: 64px
+      +r(992)
+        font-size: 54px
+      +r(767)
+        font-size: 34px

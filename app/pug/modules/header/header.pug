@@ -1,38 +1,39 @@
 header.header
   .container
-    .header__left
-      a(href="./").logo.header__logo
-        img(src="static/images/general/logo.svg", width="220" alt="")
+    .header__container
+      .header__left
+        a(href="./").logo.header__logo
+          img(src="static/images/general/logo.svg", width="220" alt="")
 
-      .lang.header__lang
-        .lang__head _fr.
+        .lang.header__lang
+          .lang__head _fr.
 
-      a(href="tel:+1101234567").header__phone +11 (0)123-4567
+        a(href="tel:+1101234567").header__phone +11 (0)123-4567
 
-    nav.nav.header__nav
-      ul.nav-list
-        li.menu-item-has-children
-          a(href="#") Services
-          ul.sub-menu
-            li
-              a(href="#") Lorem ipsum
-            li
-              a(href="#") Lorem ipsum
-            li
-              a(href="#") Lorem ipsum
-        li
-          a(href="#") Solutions
-        li
-          a(href="#") Network
-        li
-          a(href="#") About Us
+      nav.nav.header__nav
+        ul.nav-list
+          li.menu-item-has-children
+            a(href="#") Services
+            ul.sub-menu
+              li
+                a(href="#") Lorem ipsum
+              li
+                a(href="#") Lorem ipsum
+              li
+                a(href="#") Lorem ipsum
+          li
+            a(href="#") Solutions
+          li
+            a(href="#") Network
+          li
+            a(href="#") About Us
 
-      a(href="tel:+1101234567").header__phone +11 (0)123-4567
+        a(href="tel:+1101234567").header__phone +11 (0)123-4567
 
-    .user-menu.header__user-menu
-      .user-menu__head
-        a(href="#").user-menu__link <span>Account Signin</span>
-          +icon('lock', 'user-menu__icon')
+      .user-menu.header__user-menu
+        .user-menu__head
+          a(href="#").user-menu__link <span>Account Signin</span>
+            +icon('lock', 'user-menu__icon')
 
-    button.nav-toggle
-      .nav-toggle__line
+      button.nav-toggle
+        .nav-toggle__line
