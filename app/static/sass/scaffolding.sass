@@ -19,14 +19,21 @@
 
 
 /* Common styles */
+html
+  overflow-x: hidden
+
 body
   margin: 0
   padding: 0
   min-width: 320px
   font-family: $main-font
-  font-size: 14px
-  line-height: 1.6
+  font-size: 24px
+  font-weight: 300
+  line-height: 1.5
   color: $main-color
+  overflow-x: hidden
+  +r(1200)
+    font-size: 18px
 
 img
   max-width: 100%
@@ -45,12 +52,19 @@ h1, h2, h3, h4, h5, h6
 h1
   font-size: 128px
   font-weight: 400
+  color: $shark
   +r(1599)
     font-size: 100px
   +r(992)
     font-size: 80px
   +r(767)
     font-size: 48px
+
+section
+  position: relative
+  padding: 150px 0 95px
+  +r(767)
+    padding: 50px 0
 
 /* Hidden element */
 .visually-hidden

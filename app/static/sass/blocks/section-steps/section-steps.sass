@@ -1,0 +1,138 @@
+.section-steps
+  padding-top: 55px
+  &::after
+    content: ''
+    position: absolute
+    top: 310px
+    left: 0
+    width: 16%
+    height: 180px
+    background: $accent
+    +r(1200)
+      height: 120px
+      top: 360px
+    +r(992)
+      top: 250px
+    +r(767)
+      top: 200px
+      height: 90px
+    +r(576)
+      display: none
+  .icon-2
+    position: absolute
+    top: 1140px
+    right: 80%
+    z-index: -1
+    +r(1200)
+      width: 100px
+      top: 750px
+    +r(992)
+      display: none
+  .icon-3
+    position: absolute
+    bottom: 620px
+    left: 75%
+    z-index: -1
+    +r(1200)
+      width: 100px
+    +r(992)
+      bottom: 550px
+    +r(480)
+      bottom: 750px
+      left: 60%
+  &__item
+    margin-bottom: 110px
+    +r(1200)
+      margin-bottom: 70px
+    +r(992)
+      margin-bottom: 50px
+    p
+      &:last-child
+        margin-bottom: 0
+    &--img
+      img
+        max-width: none
+        width: auto
+        position: absolute
+        right: 15px
+        +r(992)
+          position: static
+          right: 0
+          width: 100%
+      .icon-1
+        position: absolute
+        top: -70px
+        right: -60px
+        +r(1200)
+          width: 100px
+          top: -40px
+          right: -35px
+        +r(576)
+          display: none
+  &__count
+    margin-bottom: 10px
+    color: $prussian-blue
+    font-weight: 400
+    span
+      color: $accent
+  &__bg
+    position: absolute
+    top: 230px
+    right: 0
+    width: 69%
+    height: 820px
+    background-color: $mystic
+    z-index: -1
+    +r(1200)
+      top: 210px
+      height: 520px
+    &-2
+      position: absolute
+      bottom: 230px
+      left: 0
+      width: 76%
+      height: 1080px
+      background-color: $mystic
+      z-index: -1
+
+
+.images-grid
+  position: relative
+  text-align: right
+  margin-bottom: 140px
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    top: -50px
+    right: 60%
+    width: 26%
+    height: 200px
+    background-color: $accent
+    z-index: -1
+    +r(1200)
+      height: 120px
+    +r(992)
+      height: 90px
+      right: 46%
+      top: -20px
+  &::after
+    content: ''
+    position: absolute
+    bottom: 150px
+    right: 0
+    width: 15%
+    height: 70px
+    background-color: $accent
+    z-index: -1
+    +r(1200)
+      bottom: 80px
+    +r(992)
+      bottom: 50px
+  img
+    +r(1200)
+      max-width: 960px
+    +r(992)
+      max-width: 650px
+    +r(767)
+      max-width: 100%
