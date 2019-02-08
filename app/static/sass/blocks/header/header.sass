@@ -1,0 +1,69 @@
+.header
+  padding: 25px 0
+  +r(767)
+    padding: 15px 0
+  .container
+    position: relative
+    display: flex
+    align-items: flex-end
+    +r(1200)
+      align-items: center
+  &__left
+    display: flex
+    align-items: flex-end
+    +r(1200)
+      align-items: center
+  &__logo
+    margin-right: 30px
+    +r(767)
+      margin-right: 15px
+  &__lang
+    margin-right: 20px
+  &__phone
+    margin-bottom: 10px
+    font-size: 24px
+    color: $shark
+    +r(1599)
+      font-size: 20px
+    +r(1200)
+      margin-bottom: 0
+    +r(576)
+      display: none
+  &__nav
+    margin-bottom: 12px
+    margin-left: auto
+    margin-right: 80px
+    +r(1599)
+      margin-right: 50px
+    +r(1200)
+      position: fixed
+      top: 0
+      right: 0
+      width: 260px
+      height: 100%
+      margin: 0
+      padding: 60px 20px 30px
+      background-color: #fff
+      box-shadow: 0 30px 60px rgba(#000, 0.15)
+      overflow-y: auto
+      +trans
+      transform: translateX(100%)
+      &.open
+        transform: translateX(0)
+      .nav-list
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 20px
+        & > *:not(:last-child)
+          margin-right: 0
+          margin-bottom: 10px
+          &::after
+            display: none
+    .header__phone
+      display: none
+      +r(576)
+        display: inline
+  &__user-menu
+    margin-bottom: 5px
+    +r(1200)
+      margin: 0 50px 0 auto

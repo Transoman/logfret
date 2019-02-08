@@ -1,0 +1,29 @@
+.user-menu
+  &__head
+  &__link
+    display: flex
+    font-family: $cera
+    font-size: 20px
+    color: #000
+    +r(1599)
+      font-size: 18px
+    +r(1200)
+      font-size: 16px
+    span
+      +r(767)
+        display: none
+    &:hover
+      .user-menu__icon
+        fill: $accent
+  &__icon
+    +size(40px)
+    margin-left: 20px
+    +trans
+    +r(1599)
+      margin-top: -5px
+    +r(1200)
+      +size(30px)
+      margin-top: 0
+      margin-left: 15px
+    +r(767)
+      margin-left: 0
