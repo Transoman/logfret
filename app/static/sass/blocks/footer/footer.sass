@@ -1,0 +1,105 @@
+.footer
+  padding: 115px 0 80px
+  background-color: $abbey
+  font-size: 16px
+  color: #fff
+  +r(767)
+    padding: 50px 0
+  .container
+    display: flex
+    align-items: flex-start
+    +r(992)
+      flex-wrap: wrap
+    +r(767)
+      flex-direction: column
+      align-items: stretch
+      & > *:not(:last-child)
+        margin-bottom: 50px
+        text-align: center
+
+  &__col
+    &--1
+      flex: 0 0 315px
+      width: 315px
+      margin-right: 45px
+      padding-right: 95px
+      border-right: 1px solid rgba(#fff, 0.3)
+      +r(1599)
+        flex: 0 0 225px
+        width: 225px
+        padding-right: 35px
+      +r(767)
+        flex: 0 0 auto
+        width: auto
+        margin-right: 0
+        padding-right: 0
+        border-right: 0
+    &--2
+      flex: 0 0 420px
+      width: 420px
+      margin-right: 110px
+      +r(1599)
+        margin-right: 20px
+      +r(1200)
+        flex: 0 0 220px
+        width: 220px
+      +r(992)
+        flex: 0 0 420px
+        width: 420px
+        margin-right: 0
+      +r(767)
+        flex: 0 0 auto
+        width: auto
+  &__logo
+    display: block
+    margin-bottom: 45px
+  &__desc
+    line-height: 1.3
+    p
+      margin-bottom: 10px
+    a
+      font-size: 18px
+      font-weight: 400
+      color: inherit
+      &:hover, &:focus
+        color: $accent
+  &__nav
+    margin: 0 0 40px
+    padding: 0
+    list-style: none
+    column-count: 2
+    column-gap: 90px
+    &:last-child
+      margin-bottom: 0
+    +r(1599)
+      column-gap: 50px
+    +r(1200)
+      column-count: 1
+    +r(992)
+      column-count: 2
+    +r(576)
+      column-count: 1
+    li
+      display: block
+      white-space: nowrap
+    a
+      color: inherit
+      &:hover, &:focus
+        color: $accent
+  &__subscribe-form
+    position: relative
+    margin-top: -220px
+    margin-bottom: 40px
+    background-color: $abbey
+    box-shadow: 0 20px 60px rgba(#000, 0.1)
+    +r(992)
+      margin-top: 0
+    .form-group
+      margin-bottom: 60px
+      +r(1200)
+        margin-bottom: 40px
+    input[type="email"]
+      border-bottom: 1px solid #fff
+      color: #fff
+      &::placeholder
+        color: #fff
