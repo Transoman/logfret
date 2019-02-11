@@ -1,0 +1,111 @@
+.s-services
+  padding-top: 105px
+
+.services
+  display: flex
+  flex-wrap: wrap
+  padding-left: 620px
+  margin-bottom: 270px
+  +r(1599)
+    padding-left: 390px
+  +r(1200)
+    margin-bottom: 100px
+    padding-left: 330px
+  +r(992)
+    padding-left: 0
+  +r(767)
+    margin-bottom: 50px
+  &__item
+    width: calc(50% - 30px)
+    max-width: 420px
+    min-height: 180px
+    margin-right: 30px
+    margin-bottom: 30px
+    padding: 55px 30px 30px
+    border: 1px solid $mystic
+    background-color: #fff
+    +r(992)
+      flex-grow: 1
+      max-width: 330px
+    +r(767)
+      width: 100%
+      margin-right: 0
+      max-width: none
+      min-height: auto
+    &:nth-child(2n)
+      margin-right: 0
+    &:nth-last-child(2)
+      margin-right: 100px
+      +r(767)
+        margin-right: 0
+    &:last-child
+      .services__title
+        display: inline
+  &__title
+    display: block
+    font-weight: 400
+    color: $shark
+    &::before
+      content: ''
+      display: block
+      +size(5px)
+      border-radius: 50%
+      background-color: $accent
+      margin-bottom: 15px
+  &__icon
+    position: absolute
+    width: 555px
+    height: 1350px
+    background-color: $mystic
+    right: 71%
+    top: 105px
+    z-index: -1
+    +r(1200)
+      width: 355px
+    +r(992)
+      display: none
+    img
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 110px
+      +r(1200)
+        max-width: 300px
+  &__img
+    position: absolute
+    left: 70%
+    bottom: 370px
+    z-index: -1
+    +r(1599)
+      left: 65%
+      bottom: 300px
+    +r(1200)
+      left: 70%
+      bottom: 450px
+    +r(992)
+      left: 65%
+      bottom: 370px
+    +r(767)
+      display: none
+    &::before
+      content: ''
+      position: absolute
+      right: 0
+      top: -50px
+      width: 235px
+      height: 50px
+      background-color: $accent
+      z-index: -1
+      +r(1200)
+        width: 165px
+        top: -40px
+    img
+      max-width: none
+      +r(1200)
+        max-width: 350px
+
+.img-3
+  +r(1599)
+    max-width: 630px
+  +r(767)
+    max-width: 100%

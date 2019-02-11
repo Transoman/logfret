@@ -52,8 +52,7 @@
     +r(767)
       bottom: 510px
     +r(480)
-      bottom: 670px
-      left: 60%
+      display: none
   &__item
     margin-bottom: 110px
     +r(1200)
@@ -133,6 +132,8 @@
   text-align: right
   margin-bottom: 140px
   z-index: 1
+  +r(480)
+    margin-bottom: 60px
   &::before
     content: ''
     position: absolute
@@ -148,6 +149,8 @@
       height: 90px
       right: 46%
       top: -20px
+    +r(767)
+      right: 74%
   &::after
     content: ''
     position: absolute
@@ -161,6 +164,8 @@
       bottom: 80px
     +r(992)
       bottom: 50px
+    +r(480)
+      bottom: 20px
   img
     +r(1200)
       max-width: 960px
