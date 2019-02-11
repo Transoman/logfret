@@ -1,0 +1,13 @@
+extends template/main
+
+block variables
+  - var title = 'Blog'
+  - var pageClass = ''
+
+block content
+  include pages/blog/hero
+  include pages/blog/article
+  include pages/optimise/blog
+  include pages/optimise/review
+  include pages/optimise/offer
+  include pages/optimise/partner

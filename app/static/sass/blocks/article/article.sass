@@ -1,0 +1,112 @@
+.article
+  padding: 150px 0 35px
+  +r(767)
+    padding: 50px 0
+  &__top
+    margin-bottom: 70px
+    padding: 0 0 70px 130px
+    border-bottom: 1px solid $mystic
+    font-size: 28px
+    font-weight: 400
+    color: $shark
+    +r(1599)
+      padding-left: 0
+    +r(1200)
+      font-size: 22px
+    +r(767)
+      padding-bottom: 30px
+      margin-bottom: 30px
+    p
+      margin: 0
+  &__row
+    display: flex
+    +r(992)
+      flex-direction: column
+  &__content
+    width: calc(100% - 230px)//84.96%
+    padding: 0 160px 0 130px
+    +r(1599)
+      padding-left: 0
+    +r(1200)
+      padding-right: 70px
+    +r(992)
+      width: 100%
+      padding-right: 0
+      margin-bottom: 50px
+    p
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+      strong, b
+        color: $shark
+  &__right
+    flex: 0 0 230px
+    +r(992)
+      flex: 0 0 auto
+  &__publish
+    font-size: 18px
+    font-weight: 500
+    color: $shark
+  &__source
+    margin: 0
+    font-size: 16px
+    font-weight: 400
+    text-transform: uppercase
+  &__img
+    &-wrap
+      position: relative
+      margin: 100px 0
+      z-index: 1
+      +r(767)
+        margin: 50px 0
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 170px
+        width: 76.3%
+        height: 65%
+        background-color: $mystic
+        z-index: -1
+        +r(1200)
+          top: 100px
+        +r(767)
+          top: 50px
+      &::after
+        content: ''
+        position: absolute
+        right: 0
+        top: 610px
+        width: 180px
+        height: 80px
+        background-color: $accent
+        z-index: -1
+        +r(1599)
+          top: 480px
+        +r(1200)
+          top: 360px
+        +r(992)
+          width: 130px
+          top: 290px
+        +r(767)
+          top: 150px
+          width: 90px
+        +r(480)
+          display: none
+    &-icon
+      position: absolute
+      top: 710px
+      left: 73%
+      +r(1599)
+        top: 570px
+      +r(1200)
+        width: 100px
+        top: 430px
+      +r(992)
+        width: 70px
+        top: 360px
+      +r(767)
+        width: 50px
+        top: 210px
+      +r(480)
+        display: none
