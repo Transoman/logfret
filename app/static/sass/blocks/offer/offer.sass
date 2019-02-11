@@ -1,0 +1,77 @@
+.s-offer
+  padding: 50px 0 0
+  background:
+    repeat: no-repeat
+    position: right center
+  +r(1200)
+    background-size: cover
+    background-position: left center
+
+.offer
+  &__right
+    align-self: flex-end
+  &__title
+    margin-bottom: 30px
+    font-size: 192px
+    font-weight: 200
+    line-height: 1
+    +r(1599)
+      font-size: 142px
+    +r(992)
+      font-size: 100px
+    +r(776)
+      font-size: 50px
+  &__content
+    margin-bottom: 130px
+    +r(1200)
+      margin-bottom: 70px
+    p
+      margin-bottom: 35px
+      font-size: 32px
+      +r(992)
+        font-size: 22px
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      & > *:not(:last-child)
+        margin-bottom: 5px
+      a
+        color: $accent
+        &:hover
+          text-decoration: underline
+  &__note
+    margin-bottom: 150px
+    max-width: 455px
+    color: $mine-shaft
+    +r(1200)
+      margin-bottom: 70px
+  &__block
+    max-width: 490px
+    padding: 50px 65px 65px
+    background-color: #fff
+    +r(1200)
+      margin: 0 auto
+    +r(576)
+      padding: 20px
+    p
+      margin-bottom: 20px
+      font-size: 28px
+      +r(992)
+        font-size: 22px
+    &-title
+      margin-bottom: 55px
+      font-size: 36px
+      font-weight: 400
+      color: $shark
+      +r(992)
+        font-size: 26px
+      +r(576)
+        margin-bottom: 35px
+    &-link
+      font-size: 28px
+      color: $accent
+      +r(992)
+        font-size: 22px
+      &:hover
+        text-decoration: underline
