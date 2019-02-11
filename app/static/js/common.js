@@ -15,6 +15,13 @@ jQuery(document).ready(function($) {
     }
   });
 
+  new Swiper ('.review', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  })
+
   // SVG
   svg4everybody({});
 
