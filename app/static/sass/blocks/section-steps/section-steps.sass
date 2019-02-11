@@ -1,5 +1,8 @@
 .section-steps
   padding-top: 55px
+  padding-bottom: 0
+  +r(576)
+    padding-top: 0
   &::after
     content: ''
     position: absolute
@@ -35,10 +38,13 @@
     z-index: -1
     +r(1200)
       width: 100px
+      bottom: 380px
     +r(992)
-      bottom: 550px
+      bottom: 430px
+    +r(767)
+      bottom: 510px
     +r(480)
-      bottom: 750px
+      bottom: 670px
       left: 60%
   &__item
     margin-bottom: 110px
@@ -49,6 +55,16 @@
     p
       &:last-child
         margin-bottom: 0
+    &--mb-b
+      margin-bottom: 285px
+      +r(1200)
+        margin-bottom: 100px
+      +r(992)
+        margin-bottom: 50px
+    &--mb-s
+      margin-bottom: 70px
+      +r(992)
+        margin-bottom: 50px
     &--img
       img
         max-width: none
@@ -69,6 +85,14 @@
           right: -35px
         +r(576)
           display: none
+    &--number-left
+      display: flex
+      +r(992)
+        display: block
+      & > *:not(:last-child)
+        margin-right: 20px
+        +r(992)
+          margin-right: 0
   &__count
     margin-bottom: 10px
     color: $prussian-blue

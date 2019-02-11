@@ -1,0 +1,74 @@
+.blog-prev
+  padding: 0 130px
+  +r(1599)
+    padding: 0
+  &__item
+    +r(992)
+      margin-bottom: 30px
+  &__inner
+    position: relative
+    height: 100%
+    background:
+      repeat: no-repeat
+      position: center
+      size: cover
+    padding: 65px 80px 295px
+    z-index: 1
+    +r(1200)
+      padding: 45px 50px 245px
+    +r(992)
+      padding-bottom: 160px
+    +r(576)
+      padding: 20px 25px 160px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-color: rgba(#fff, 0.2)
+      z-index: -1
+      +trans
+    &:hover
+      &::before
+        background-color: rgba(#fff, 0)
+  &__cat
+    margin-bottom: 50px
+    a
+      font-size: 28px
+      color: inherit
+      +r(1200)
+        font-size: 22px
+      &:hover, &:focus
+        color: $accent
+  &__title
+    max-width: 310px
+    margin-bottom: 0
+    +r(992)
+      max-width: 450px
+    a
+      font-size: 42px
+      font-weight: 400
+      color: $shark
+      line-height: 1.2
+      +r(1200)
+        font-size: 32px
+      +r(767)
+        font-size: 28px
+      &:hover, &:focus
+        color: $accent
+  &__more
+    position: absolute
+    right: 60px
+    bottom: 60px
+    font-size: 32px
+    font-weight: 400
+    color: $accent
+    +r(1200)
+      font-size: 24px
+    +r(576)
+      right: 20px
+      bottom: 20px
+    &:hover
+      text-decoration: underline
