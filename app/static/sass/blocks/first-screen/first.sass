@@ -1,0 +1,90 @@
+.first-screen
+  position: relative
+  padding: 580px 0 170px
+  background:
+    repeat: no-repeat
+    position: center
+    size: cover
+  z-index: 1
+  +r(1599)
+    padding-top: 210px
+  +r(992)
+    padding-bottom: 110px
+  +r(767)
+    padding: 150px 0 80px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(#000, 0.35)
+    z-index: -1
+    +r(992)
+      background-color: rgba(#000, 0.6)
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 350px
+    background-image: linear-gradient(rgba(#000, 0), rgba(#000, 1))
+    z-index: -1
+  .row
+    align-items: flex-end
+  &__col
+    &::after
+      content: ''
+      position: absolute
+      right: 0
+      bottom: -50px
+      width: 1px
+      height: 300px
+      background-color: #fff
+      +r(992)
+        height: 200px
+        bottom: -20px
+      +r(767)
+        display: none
+    &:last-child
+      &::after
+        display: none
+    +r(992)
+    &:first-child
+      &::after
+        display: none
+  &__content
+    color: #fff
+    +r(992)
+      margin-bottom: 50px
+    p
+      margin: 0
+      line-height: 1.3
+  &__title
+    font-size: 72px
+    font-weight: 300
+    color: #fff
+    +r(1599)
+      font-size: 52px
+    +r(1200)
+      font-size: 42px
+  &__suptitle
+    font-size: 32px
+    +r(1200)
+      font-size: 26px
+  &__item
+    display: flex
+    flex-direction: column
+    margin-bottom: 40px
+    +r(1200)
+      margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+      +r(767)
+        margin-bottom: 20px
+    &-title
+      font-size: 36px
+    &-desc
+      color: #fff

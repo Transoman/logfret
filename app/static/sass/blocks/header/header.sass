@@ -74,3 +74,29 @@
     margin-bottom: 5px
     +r(1200)
       margin: 0 50px 0 auto
+  &--home
+    .header
+      &__phone
+        +rmin(578)
+          color: #fff
+          &:hover, &:focus
+            color: $accent
+      &__nav
+        .nav-list
+          > *:not(:last-child)::after
+            +rmin(1201)
+              background-color: #fff
+          > li > a
+            +rmin(1201)
+              color: #fff
+              &:hover, &:focus
+                color: $accent
+      &__user-menu
+        .user-menu__link
+          color: #fff
+          &:hover, &:focus
+            color: $accent
+        .user-menu__icon
+          fill: #fff
+          &:hover, &:focus
+            fill: $accent
