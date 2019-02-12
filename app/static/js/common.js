@@ -36,6 +36,18 @@ jQuery(document).ready(function($) {
     }
   });
 
+  new Swiper ('.services-prev', {
+    slidesPerView: 'auto',
+    spaceBetween: 80,
+    autoplay: true,
+    speed: 1000,
+    breakpoints: {
+      576: {
+        slidesPerView: 1
+      }
+    }
+  });
+
   var fullwidth = function() {
     var el = $('.article__img-wrap');
     if (el.length) {
