@@ -24,18 +24,20 @@ jQuery(document).ready(function($) {
 
   var fullwidth = function() {
     var el = $('.article__img-wrap');
-    var position = el.position();
-    var left = position.left;
-    console.log(position);
-    var right = $(window).width() - position.left - el.width();
-    if (left != 0) {
-      el.css({'left': '-' + left + 'px', 'right': '-' + right + 'px', 'width': $(window).width() + 'px'});
+    if (el.length) {
+      var position = el.position();
+      var left = 0 - el.offset().left;
+      console.log(el.offset().left);
+      var right = $(window).width() - position.left - el.width();
+      if (el.offset().left >= 0 || left > 0) {
+        el.css({'left': left, 'width': $(window).width()});
+      }
     }
   }
 
   fullwidth();
 
-  $(window).resize(function() {
+  $(window).on('resize', function() {
     // fullwidth();
   });
 
