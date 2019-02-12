@@ -22,6 +22,20 @@ jQuery(document).ready(function($) {
     }
   });
 
+  new Swiper ('.neolink__feature-row', {
+    slidesPerView: 2,
+    spaceBetween: 60,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1
+      }
+    }
+  });
+
   var fullwidth = function() {
     var el = $('.article__img-wrap');
     if (el.length) {

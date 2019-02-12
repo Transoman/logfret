@@ -1,0 +1,111 @@
+.neolink
+  &::before
+    content: ''
+    position: absolute
+    top: 55%
+    right: 0
+    width: 62.5%
+    height: 1130px
+    background-color: $catskill-white
+    z-index: -1
+  &__card
+    position: relative
+    height: 100%
+    background:
+      repeat: no-repeat
+      position: center
+      size: cover
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: flex-start
+    padding: 140px 230px 140px 70px
+    color: #fff
+    z-index: 1
+    +r(1599)
+      padding-right: 110px
+    +r(992)
+      margin-bottom: 50px
+      height: auto
+      padding: 110px 70px
+    +r(767)
+      padding: 70px 50px 110px
+    +r(576)
+      padding: 50px 20px 80px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(#5f6d78, 0.7)
+      z-index: -1
+    img
+      margin-bottom: 30px
+    &-title
+      display: block
+      margin-bottom: 20px
+      font-weight: 700
+    &-more
+      position: absolute
+      right: 70px
+      bottom: 70px
+      font-size: 32px
+      +r(767)
+        font-size: 24px
+        bottom: 40px
+        right: 50px
+      &:hover
+        text-decoration: none
+  &__feature
+    height: 100%
+    padding: 70px
+    background-color: #fff
+    +r(1599)
+      padding: 50px
+    +r(576)
+      padding: 20px
+    &-label
+      font-size: 32px
+      +r(1200)
+        font-size: 24px
+    &-title
+      margin-bottom: 70px
+      font-size: 64px
+      font-weight: 400
+      +r(1599)
+        font-size: 44px
+      +r(1200)
+        margin-bottom: 50px
+        font-size: 34px
+      +r(576)
+        font-size: 26px
+    &-row
+      padding-bottom: 100px
+      margin-bottom: 40px
+    &-item
+      +r(576)
+        text-align: center
+      &-icon
+        width: 135px
+        +r(1599)
+          width: 110px
+        +r(576)
+          width: 70px
+        &-wrap
+          margin-bottom: 50px
+          text-align: center
+          +r(576)
+            margin-bottom: 20px
+      &-title
+        font-weight: 700
+      &-desc
+        margin: 0
+  &__link
+    float: right
+    font-size: 32px
+    +r(767)
+      font-size: 24px
+    &:hover
+      text-decoration: underline
