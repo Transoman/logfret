@@ -1,0 +1,111 @@
+.s-network
+  padding: 335px 0 265px
+  background: $mystic url(../images/general/pattern.png) no-repeat right center
+  margin-top: -70px
+  +r(1599)
+    margin-top: 0
+    padding: 165px 0
+  +r(992)
+    background-size: 50% auto
+  +r(767)
+    padding: 50px 0
+    background-size: 80% auto
+
+.network
+  display: flex
+  +r(992)
+    flex-direction: column
+  &__left
+    flex: 0 0 33.33%
+    width: 33.33%
+    padding: 0 20px 0 45px
+    +r(992)
+      flex: 0 0 auto
+      width: auto
+      padding: 0
+    p
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+  &__title
+    margin-bottom: 15px
+    font-size: 32px
+    +r(1200)
+      font-size: 20px
+  &__btn-wrap
+    text-align: right
+  &__right
+    position: relative
+    flex-grow: 1
+    padding: 0 25px 0 45px
+    +r(992)
+      padding: 0
+  &__ww
+    margin-bottom: 0
+    font-size: 120px
+    font-weight: 200
+    line-height: 1
+    +r(1599)
+      font-size: 90px
+    +r(1200)
+      font-size: 60px
+    +r(767)
+      margin-bottom: 50px
+    +r(576)
+      font-size: 36px
+    span
+      font-size: 240px
+      display: block
+      line-height: 0.8
+      +r(1599)
+        font-size: 190px
+        line-height: 1
+      +r(1200)
+        font-size: 120px
+      +r(576)
+        font-size: 90px
+  &__form
+    position: absolute
+    top: 0
+    right: 25px
+    width: 540px
+    +r(1599)
+      width: 450px
+    +r(1200)
+      width: 380px
+    +r(767)
+      position: static
+      right: auto
+      top: auto
+      width: auto
+    input[type="text"]
+      background-color: $accent
+      padding: 35px 100px 35px 30px
+      color: #fff
+      +r(1200)
+        padding-top: 15px
+        padding-bottom: 15px
+      &::placeholder
+        color: #fff
+    &-btn
+      position: absolute
+      right: 25px
+      top: 25px
+      +size(60px)
+      padding: 0
+      background-color: #fff
+      border-radius: 5px
+      border: 0
+      font-size: 32px
+      color: $accent
+      cursor: pointer
+      +trans
+      +r(1200)
+        font-size: 18px
+        top: 10px
+        right: 15px
+        +size(40px)
+      &:hover
+        background-color: rgba(#fff, 0.8)
+      &:focus
+        outline: none
