@@ -1,7 +1,65 @@
 @import 'blog-prev'
 
-.s-blog
+.s-blog-prev
   padding-top: 120px
   padding-bottom: 0
   +r(767)
     padding: 50px 0 0
+
+.s-blog
+  +r(992)
+    padding-bottom: 50px
+.blog
+  display: flex
+  +r(992)
+    flex-direction: column
+    .section-head
+      margin-bottom: 40px
+  &__img
+    position: relative
+    flex: 0 0 955px
+    width: 955px
+    margin-right: 70px
+    +r(1599)
+      flex: 0 0 665px
+      width: 665px
+    +r(1200)
+      flex: 0 0 475px
+      width: 475px
+      margin-right: 30px
+    +r(992)
+      flex: 0 0 auto
+      width: auto
+      margin-right: 0
+  &__info
+    position: absolute
+    top: 50px
+    left: 40px
+    font-size: 18px
+    font-weight: 400
+    +r(1200)
+      top: 30px
+      left: 30px
+    +r(767)
+      top: 20px
+      left: 20px
+  &__cat
+    text-transform: uppercase
+    font-weight: 700
+  &__right
+    padding-top: 50px
+  &__title
+    margin-bottom: 20px
+    font-size: 32px
+    +r(1200)
+      font-size: 28px
+  &__content
+    p
+      font-size: 24px
+      margin-bottom: 40px
+      +r(1200)
+        font-size: 18px
+  &__link
+    text-decoration: underline
+    &:hover
+      text-decoration: none
