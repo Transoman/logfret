@@ -34,6 +34,8 @@ footer.footer
           a(href="#") Contact us
         li
           a(href="#") Get social
+        li
+          a(href="#").modal-newletter_open Popup
     .footer__col.footer__col--3
       form(action="" method="post").subscribe-form.footer__subscribe-form
         span.subscribe-form__title _newsletter
@@ -45,3 +47,25 @@ footer.footer
 
       p.copyright &copy; 2018 Logfret Pty Ltd | 
         a(href="#") Terms and Conditions
+
+.modal.modal-newletter#modal-newletter
+  .modal__close.modal-newletter_close
+  .modal-newletter__body
+    h3.modal-newletter__title _newsletter.
+    form.modal-newletter__form
+      .form-group
+        input(type="text" name="company_name" placeholder="Company Name")
+      .form-group
+        input(type="text" name="full_name" placeholder="First and Last Name")
+      .form-group
+        input(type="text" name="country" placeholder="Country")
+      .form-group
+        input(type="email" name="email" placeholder="Email")
+      .form-group
+        input(type="url" name="website" placeholder="Website")
+      .form-group
+        input(type="tel" name="phone" placeholder="Contact Number")
+      .form-group
+        textarea(name="message", placeholder="Enquiries / Questions / Feedbacks")
+      .form-group.form-group--btn
+        input(type="submit" value="_ send")

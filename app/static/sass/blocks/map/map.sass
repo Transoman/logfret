@@ -1,0 +1,58 @@
+.s-map
+  padding-top: 65px
+  +r(1200)
+    padding-top: 0
+
+.world-map
+  height: 640px
+  margin-bottom: 100px
+  +r(1599)
+    height: 570px
+  +r(1200)
+    height: 500px
+  +r(992)
+    height: 400px
+  +r(767)
+    margin-bottom: 0
+  +r(576)
+    height: 300px
+
+.map
+  padding: 0 130px
+  +r(1599)
+    padding: 0
+  &__list
+    position: absolute
+    bottom: 120px
+    margin: 0
+    padding: 0
+    list-style: none
+    +r(1200)
+      bottom: 60px
+    +r(767)
+      position: static
+      bottom: auto
+    li
+      position: relative
+      margin-bottom: 10px
+      padding-left: 40px
+      font-size: 16px
+      font-weight: 400
+      overflow: hidden
+      &:last-child
+        margin-bottom: 0
+      &::before
+        content: ''
+        position: absolute
+        top: 5px
+        left: 0
+        width: 20px
+        height: 15px
+        background: url('../images/general/icon-fly.svg') no-repeat center / contain
+        +trans
+        transform: translateX(-20px)
+      &.active
+        color: $accent
+        text-decoration: underline
+        &::before
+          transform: translateX(0)

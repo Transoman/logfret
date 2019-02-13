@@ -52,7 +52,6 @@ jQuery(document).ready(function($) {
 
   new Swiper ('.case', {
     autoplay: true,
-    // autoHeight: true,
     speed: 1000,
     effect: 'fade',
     fadeEffect: {
@@ -69,7 +68,6 @@ jQuery(document).ready(function($) {
     if (el.length) {
       var position = el.position();
       var left = 0 - el.offset().left;
-      console.log(el.offset().left);
       var right = $(window).width() - position.left - el.width();
       if (el.offset().left >= 0 || left > 0) {
         el.css({'left': left, 'width': $(window).width()});
@@ -81,6 +79,53 @@ jQuery(document).ready(function($) {
 
   $(window).on('resize', function() {
     // fullwidth();
+  });
+
+  $('.world-map').vectorMap({
+    map: 'continents_mill',
+    backgroundColor: '#fff',
+    zoomOnScroll: false,
+    regionStyle: {
+      initial: {
+        fill: '#d3d5d6',
+        "fill-opacity": 1,
+        stroke: 'none',
+        "stroke-width": 0,
+        "stroke-opacity": 1
+      },
+      hover: {
+        fill: '#e18e19',
+        cursor: 'default'
+      }
+    },
+    onRegionOver: function(e, code) {
+      if (code == 'AF') {
+        $('.map__list li').removeClass('active');
+        $('.map__list .africa').addClass('active');
+      }
+      else if (code == 'AS') {
+        $('.map__list li').removeClass('active');
+        $('.map__list .asia').addClass('active');
+        $('.map__list .me').addClass('active');
+      }
+      else if (code == 'NA') {
+        $('.map__list li').removeClass('active');
+        $('.map__list .na').addClass('active');
+      }
+      else if (code == 'SA') {
+        $('.map__list li').removeClass('active');
+        $('.map__list .csa').addClass('active');
+      }
+      else if (code == 'EU') {
+        $('.map__list li').removeClass('active');
+        $('.map__list .wee').addClass('active');
+      }
+    },
+    onRegionOut: function(e, code) {
+      if (code != 'AF' || code != 'AS' || code != 'NA' || code != 'SA' || code != 'EU') {
+        $('.map__list li').removeClass('active');
+      }
+    }
   });
 
 
