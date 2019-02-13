@@ -52,7 +52,7 @@ jQuery(document).ready(function($) {
 
   new Swiper ('.case', {
     autoplay: true,
-    autoHeight: true,
+    // autoHeight: true,
     speed: 1000,
     effect: 'fade',
     fadeEffect: {
