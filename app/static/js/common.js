@@ -25,6 +25,8 @@ jQuery(document).ready(function($) {
   new Swiper ('.neolink__feature-row', {
     slidesPerView: 2,
     spaceBetween: 60,
+    autoplay: true,
+    speed: 1000,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -46,6 +48,20 @@ jQuery(document).ready(function($) {
         slidesPerView: 1
       }
     }
+  });
+
+  new Swiper ('.case', {
+    autoplay: true,
+    autoHeight: true,
+    speed: 1000,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
   var fullwidth = function() {

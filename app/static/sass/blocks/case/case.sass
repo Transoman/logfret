@@ -1,0 +1,92 @@
+.s-case
+  padding: 0
+  .container
+    position: relative
+  .section-title
+    position: absolute
+    top: 120px
+    z-index: 2
+    +r(767)
+      top: 50px
+
+.case
+  &__item
+    background:
+      repeat: no-repeat
+      position: left center
+      size: contain
+    height: auto
+    +r(992)
+      background-size: cover
+    &.swiper-slide-active
+      .case__row
+        opacity: 1
+  &__row
+    display: flex
+    justify-content: flex-end
+    padding-top: 360px
+    opacity: 0
+    +trans(1s)
+    transition-delay: 0.8s
+    +r(767)
+      flex-direction: column
+      padding-top: 200px
+  &__col
+    flex: 0 0 640px
+    width: 640px
+    padding: 180px 115px 150px 70px
+    background-color: #fff
+    font-size: 32px
+    font-weight: 400
+    +r(1599)
+      flex: 0 0 400px
+      width: 400px
+      font-size: 22px
+      padding: 100px 40px 150px
+    +r(992)
+      flex: 0 0 50%
+      width: 50%
+      padding: 60px 40px 100px
+    +r(767)
+      flex: 0 0 auto
+      width: auto
+    +r(576)
+      padding: 20px 20px 100px
+    &--black
+      background-color: rgba(#000, 0.7)
+      color: #fff
+      padding-right: 60px
+      padding-left: 85px
+      +r(1599)
+        padding-right: 40px
+        padding-left: 40px
+      +r(767)
+        padding: 40px
+      +r(576)
+        padding: 20px
+  &__content
+    p
+      margin-bottom: 30px
+      line-height: 1.1
+  &__title
+    color: $accent
+  &__more
+    display: block
+    text-align: right
+  &__text
+    margin: 0
+    font-size: 64px
+    +r(1599)
+      font-size: 42px
+    +r(992)
+      font-size: 32px
+    +r(576)
+      font-size: 26px
+  .swiper-btn-wrap
+    bottom: 60px
+    justify-content: flex-end
+    padding-right: 130px
+    +r(1599)
+      padding-right: 50px
+    +r(992)
+      bottom: 30px
